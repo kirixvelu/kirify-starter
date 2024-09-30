@@ -6,4 +6,4 @@ tags:
 ---
 some content.
 
-{% image "../../leaves.jpg", "Some green leaves" %}
+{% image "../../public/img/leaves.jpg", "Some green leaves" %}
