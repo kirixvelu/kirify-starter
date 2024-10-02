@@ -17,7 +17,9 @@ layout: layouts/base.njk
 {{ content | safe }}
 
 <h1>{{ title }}</h1>
-<img src="./../../{{ featuredImage | url }}"></img>
+
+<img src="./../..{{ featuredImage | url }}"></img>
+
 <h4>{{ tags }}</h4>
 
 {%- if collections.posts %}
