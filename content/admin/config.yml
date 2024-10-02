@@ -15,5 +15,5 @@ collections:
       # - { label: "Publish Date", name: "date", widget: "datetime" }
       - {label: "Publish Date", name: "date", widget: "datetime", time_format: false, date_format: "YYYY-MM-DD", format: "YYYY-MM-DD"}
       - {label: "tags", name: "tags", widget: "list", default: ["posts"]}
-      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image"}
       - { label: "Body", name: "body", widget: "markdown" }

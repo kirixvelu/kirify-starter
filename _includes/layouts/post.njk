@@ -16,6 +16,10 @@ layout: layouts/base.njk
 
 {{ content | safe }}
 
+<h1>{{ title }}</h1>
+<img src="./../../img/{{ featuredImage | url }}"></img>
+<h4>{{ tags }}</h4>
+
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}
