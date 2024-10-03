@@ -16,11 +16,9 @@ layout: layouts/base.njk
 
 {{ content | safe }}
 
-<h1>{{ title }}</h1>
-
-<img src="./../..{{ featuredImage | url }}"></img>
-
-<h4>{{ tags }}</h4>
+{%- if (featuredImage) -%}
+<img src="{{ featuredImage }}">
+{%- else -%}{%- endif -%}
 
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
